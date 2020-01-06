@@ -33,9 +33,65 @@ sizeof(char) = 1
 用true/false 需要 include 它
 
 ### switch case:
-只能是'int'一族或者'enum'
+只能是`int`一族或者`enum`
 
 指针不可
+
+### for-loop
+
+```C
+    //这个语句成立
+    for(int i = 0; i < 10; i++)
+    if(i < 10){ 
+    }
+```
+
+### function
+if a function return adress of local variable, it will cause a warning
+
+### static
+
+### preprocessor
+#include:
+
+include can include all types of files
+
+#define:
+
+### Conditional compilation
+
+### pointer and array
+```C
+    int a[10];
+    printf("%p", a);
+```
+%p 输出 指针的值——地址
+输出的是array a 的地址， 也就是说a可以当指针输出
+
+```C
+    void foo(int p[4]){
+        int i = 10;
+        p = &i;
+        //printf("%d", p[0]);
+    }
+```
+传进来的是指针的值——地址，原(int \*)指针不会被修改
+
+### declaration
+They are allow but will cause a warning
+```C
+    int **c = &c;
+    int **c = &*c;
+    int **c = **c;
+```
+Why?
+```C
+    int a = a;
+    //a = 0;
+```
+
+
+
 
 
 
