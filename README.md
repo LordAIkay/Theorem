@@ -1,2 +1,2 @@
-# Theorem-C
+# Theorem-C and Python
 a notebook 
