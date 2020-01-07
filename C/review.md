@@ -90,6 +90,29 @@ Why?
     //a = 0;
 ```
 
+### Function-calling
+######`float`-type argument can be pass to a function requiring `int`-type parameter:
+```C
+    //The practice is right
+    void func(int){}
+    void main(){
+        double x = 1.67;
+        func(x);
+    }
+```
+
+### String
+###### 
+```C
+    //The practice is right
+    void main(){
+        char* x = "abcd";
+        //x = "abcd";    //This practice is right
+        x[2] = "a";    //This practice is wrong because 'abcd' is storages in the **Read/only Area** with codes.     
+    }
+```
+
+
 
 
 
