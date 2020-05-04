@@ -1,2 +1,2 @@
-# Theorem-C and Python
+# C and C++ language.
 a notebook 
