@@ -1,2 +1,2 @@
 # C and C++ language.
-a notebook 
+A notebook reposity. I used it to storage something about language.
